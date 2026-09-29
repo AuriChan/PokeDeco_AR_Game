@@ -2431,7 +2431,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1117235090
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3458,13 +3458,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CameraToFace: {fileID: 0}
   m_ObjectPrefabs:
-  - {fileID: 8986328500875594450, guid: d825bbdf58c379d4290da92e387f71d0, type: 3}
-  - {fileID: 7657548977611231357, guid: 3cbfcd4079a5031478389d5ab3c8c311, type: 3}
-  - {fileID: 3555902977704940904, guid: 23412048bf4821d4f8bf5c7d9c1abd5b, type: 3}
-  - {fileID: 5419581123709780336, guid: aaf6326249753074fbc1148303020f26, type: 3}
-  - {fileID: 7279467769842343898, guid: b1b37ac0eaa6a9a4785fc1f26065e8b3, type: 3}
-  - {fileID: 3745605318107395163, guid: daca7e1cd0a975941a64a8a9cbd8e5e5, type: 3}
-  - {fileID: 2668992677333385299, guid: 98cdacc32bf0d8d469092762a7263c4b, type: 3}
+  - {fileID: 7768663850006364841, guid: 95dfd13852b09db46ba8d770cf96d836, type: 3}
+  - {fileID: 4636818841925912320, guid: 48056be3ac668c84ab3589a0acd51002, type: 3}
+  - {fileID: 7254566802943549340, guid: bd3666cd267761745a5bc2f727ff673e, type: 3}
+  - {fileID: 3457446095503932169, guid: 1c9611ff43298a643a1f756141ab96e2, type: 3}
+  - {fileID: 1806238039042196831, guid: c7552ba0d8edf8546ae6bfa3c0c35332, type: 3}
+  - {fileID: 5352686722082210192, guid: 75c80de8a4dd1b64594a23214bfb77fd, type: 3}
+  - {fileID: 5593941943057452710, guid: 163fa2850a529bf4b930ed6b0993f346, type: 3}
+  - {fileID: 4246628934457725555, guid: f3f8dafcb9a7a1f4080cbe243af69d1e, type: 3}
+  - {fileID: 3605074064969076812, guid: 83b9fa2ea17614e4da03b921c31af368, type: 3}
+  - {fileID: 502936478018960463, guid: f49829bceafee064baa151969d444e16, type: 3}
+  - {fileID: 6989690315537368526, guid: 803049158524a034ea817c6491b755bf, type: 3}
+  - {fileID: 6287342345931481213, guid: c78a7270e29d72b4ab480c6865f65585, type: 3}
+  - {fileID: 5552904544958533193, guid: 522b1828fb3bedc4dba9d31435b1c3c2, type: 3}
+  - {fileID: 2304496414610264927, guid: 91aeff5d5792462499af9dead05ec406, type: 3}
+  - {fileID: 3392679629966885647, guid: 87236d16a0c314143a198c58c025b27b, type: 3}
   m_SpawnVisualizationPrefab: {fileID: 0}
   m_SpawnOptionIndex: 0
   m_OnlySpawnInView: 1
