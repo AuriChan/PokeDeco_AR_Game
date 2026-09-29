@@ -16,4 +16,34 @@ MonoBehaviour:
   m_GuidHigh: 9084839311314075017
   m_DataStore:
     m_Storage: []
-  m_Images: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 4752492956770850699
+      m_GuidHigh: 9806990989219395214
+    m_SerializedTextureGuid:
+      m_GuidLow: 2671795360590694741
+      m_GuidHigh: 18015834026635552920
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Treecko_Card
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5232875532071908433
+      m_GuidHigh: 6329220923343821219
+    m_SerializedTextureGuid:
+      m_GuidLow: 17421319511580479536
+      m_GuidHigh: 15503143289270477929
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Torchic_Card
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4885111992287190752
+      m_GuidHigh: 2535748690131893419
+    m_SerializedTextureGuid:
+      m_GuidLow: 199329244227965573
+      m_GuidHigh: 11566656723769734859
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Mudkip_Card
+    m_Texture: {fileID: 0}
