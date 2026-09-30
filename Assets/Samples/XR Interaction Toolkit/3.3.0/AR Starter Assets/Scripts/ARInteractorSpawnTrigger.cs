@@ -58,6 +58,15 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets
         }
 
         [SerializeField]
+        bool m_RequireVerticalSurface;
+
+        public bool requireVerticalSurface
+        {
+            get => m_RequireVerticalSurface;
+            set => m_RequireVerticalSurface = value;
+        }
+
+        [SerializeField]
         [Tooltip("The type of trigger to use to spawn an object, either when the Interactor's select action occurs or " +
             "when a button input is performed.")]
         SpawnTriggerType m_SpawnTriggerType;
@@ -132,7 +141,14 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets
         {
             m_SpawnObjectInput.DisableDirectActionIfModeUsed();
         }
-
+        public void SetRequireVerticalSurface(bool value)
+        {
+            m_RequireVerticalSurface = value;
+        }
+        public void SetRequireHorizontalSurface(bool value)
+        {
+            m_RequireHorizontalUpSurface = value;
+        }
         /// <summary>
         /// See <see cref="MonoBehaviour"/>.
         /// </summary>
@@ -170,6 +186,8 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets
                         return;
 
                     if (m_RequireHorizontalUpSurface && arPlane.alignment != PlaneAlignment.HorizontalUp)
+                        return;
+                    if (m_RequireVerticalSurface && arPlane.alignment != PlaneAlignment.Vertical)
                         return;
 
                     m_ObjectSpawnTriggered.Invoke(arRaycastHit.pose.position, arPlane.normal);

@@ -382,6 +382,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireVerticalSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &100144622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1442,6 +1468,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &631547699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1655,6 +1694,19 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
           Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
         m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1886,6 +1938,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &798344714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2035,6 +2100,19 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
           Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
         m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2987,6 +3065,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1256086636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3435,6 +3526,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1450277532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3520,6 +3624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ARInteractor: {fileID: 868739387}
   m_RequireHorizontalUpSurface: 0
+  m_RequireVerticalSurface: 0
   m_SpawnTriggerType: 0
   m_SpawnObjectInput:
     m_InputSourceMode: 2
@@ -3587,7 +3692,7 @@ MonoBehaviour:
   - {fileID: 7254566802943549340, guid: bd3666cd267761745a5bc2f727ff673e, type: 3}
   - {fileID: 3457446095503932169, guid: 1c9611ff43298a643a1f756141ab96e2, type: 3}
   - {fileID: 1806238039042196831, guid: c7552ba0d8edf8546ae6bfa3c0c35332, type: 3}
-  - {fileID: 5352686722082210192, guid: 75c80de8a4dd1b64594a23214bfb77fd, type: 3}
+  - {fileID: 4609620241510826166, guid: eefb52295a80cd74aa336d3deafb4c3b, type: 3}
   - {fileID: 5593941943057452710, guid: 163fa2850a529bf4b930ed6b0993f346, type: 3}
   - {fileID: 4246628934457725555, guid: f3f8dafcb9a7a1f4080cbe243af69d1e, type: 3}
   - {fileID: 3605074064969076812, guid: 83b9fa2ea17614e4da03b921c31af368, type: 3}
@@ -3855,6 +3960,32 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
           Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
         m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireVerticalSurface
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4161,6 +4292,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1654007554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4299,6 +4443,19 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
           Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
         m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4848,6 +5005,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireVerticalSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1759674846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5070,6 +5253,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1803060497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5208,6 +5404,19 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
           Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
         m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5891,6 +6100,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &2056542989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6029,6 +6251,19 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
           Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
         m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1456198882}
+        m_TargetAssemblyTypeName: UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets.ARInteractorSpawnTrigger,
+          Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets
+        m_MethodName: set_requireHorizontalUpSurface
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

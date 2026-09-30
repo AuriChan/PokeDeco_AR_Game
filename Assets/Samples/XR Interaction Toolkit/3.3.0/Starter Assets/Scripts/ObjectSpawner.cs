@@ -191,8 +191,19 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             if (index < m_ObjectPrefabs.Count)
             { 
                 m_SpawnOptionIndex = index; 
+                //if(index == 5 || index == 6)
+                //{ 
+                //    SendMessage("SetRequireVerticalSurface", true, SendMessageOptions.DontRequireReceiver);
+                //    SendMessage("SetRequireHorizontalSurface", false, SendMessageOptions.DontRequireReceiver);
+                //}
+                //else
+                //{
+                //    SendMessage("SetRequireHorizontalSurface", true, SendMessageOptions.DontRequireReceiver);
+                //    SendMessage("SetRequireVerticalSurface", false, SendMessageOptions.DontRequireReceiver);
+                //}
             }
-              
+           
+           
         }
        
         /// <summary>
@@ -237,7 +248,23 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             BurstMathUtility.ProjectOnPlane(forward, spawnNormal, out var projectedForward);
             newObject.transform.rotation = Quaternion.LookRotation(projectedForward, spawnNormal);
 
-            if (m_ApplyRandomAngleAtSpawn)
+            bool isVerticalSurface = Mathf.Abs(spawnNormal.y) < 0.5f;
+
+            if (isVerticalSurface)
+            {
+                var wallNormal = spawnNormal;
+                var toCamera = cameraToFace.transform.position - spawnPoint;
+                if (Vector3.Dot(wallNormal, toCamera) < 0f)
+                {
+                    wallNormal = -wallNormal;
+                }
+                wallNormal.y = 0f;
+                newObject.transform.rotation = Quaternion.LookRotation(wallNormal.normalized, Vector3.up);
+
+                newObject.transform.Rotate(0f, 0, 0f, Space.World);
+            }
+
+            if (m_ApplyRandomAngleAtSpawn && !isVerticalSurface)
             {
                 var randomRotation = Random.Range(-m_SpawnAngleRange, m_SpawnAngleRange);
                 newObject.transform.Rotate(Vector3.up, randomRotation);
@@ -252,9 +279,6 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
             
             objectSpawned?.Invoke(newObject);
-
-
-
 
             return true;
         }
