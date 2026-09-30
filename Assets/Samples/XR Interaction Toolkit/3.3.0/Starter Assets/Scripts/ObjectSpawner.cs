@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.XR.Interaction.Toolkit.Utilities;
 
@@ -12,8 +13,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         [SerializeField]
         [Tooltip("The camera that objects will face when spawned. If not set, defaults to the main camera.")]
         Camera m_CameraToFace;
-
-        /// <summary>
+        Behaviour m_SpawnTrigger;
         /// The camera that objects will face when spawned. If not set, defaults to the <see cref="Camera.main"/> camera.
         /// </summary>
         public Camera cameraToFace
@@ -157,7 +157,10 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         /// </summary>
         void Awake()
         {
+         
             EnsureFacingCamera();
+            if (m_SpawnTrigger == null) m_SpawnTrigger = GetComponent("ARInteractorSpawnTrigger") as Behaviour;
+            m_SpawnTrigger.enabled = false;
         }
 
         void EnsureFacingCamera()
@@ -186,11 +189,12 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         public void SetSpawnObjectIndex(int index)
         {
             if (index < m_ObjectPrefabs.Count)
-                m_SpawnOptionIndex = index;
-            else
-                Debug.LogWarning("Object index specified larger than number of Object Prefabs.", this);
+            { 
+                m_SpawnOptionIndex = index; 
+            }
+              
         }
-
+       
         /// <summary>
         /// Attempts to spawn an object from <see cref="objectPrefabs"/> at the given position. The object will have a
         /// yaw rotation that faces <see cref="cameraToFace"/>, plus or minus a random angle within <see cref="spawnAngleRange"/>.
@@ -246,7 +250,12 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 visualizationTrans.rotation = newObject.transform.rotation;
             }
 
+            
             objectSpawned?.Invoke(newObject);
+
+
+
+
             return true;
         }
 
@@ -264,8 +273,16 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         /// <seealso cref="objectSpawned"/>
         public void SpawnObject(Vector3 spawnPoint, Vector3 spawnNormal)
         {
+
             if (!TrySpawnObject(spawnPoint, spawnNormal))
                 Debug.LogWarning("Could not spawn object.", this);
+            else
+            {
+                m_SpawnTrigger.enabled = false;
+            }
+
+
+
         }
     }
 }

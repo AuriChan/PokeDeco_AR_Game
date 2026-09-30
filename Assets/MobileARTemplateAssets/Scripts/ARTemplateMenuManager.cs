@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Readers;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
+using UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 namespace UnityEngine.XR.Templates.AR
@@ -18,6 +19,7 @@ namespace UnityEngine.XR.Templates.AR
         [SerializeField]
         [Tooltip("Button that opens the create menu.")]
         Button m_CreateButton;
+
 
         /// <summary>
         /// Button that opens the create menu.
@@ -232,6 +234,7 @@ namespace UnityEngine.XR.Templates.AR
             m_CancelButton.onClick.AddListener(HideMenu);
             m_DeleteButton.onClick.AddListener(DeleteFocusedObject);
             m_PlaneManager.trackablesChanged.AddListener(OnPlaneChanged);
+           
         }
 
         /// <summary>
@@ -244,6 +247,7 @@ namespace UnityEngine.XR.Templates.AR
             m_CancelButton.onClick.RemoveListener(HideMenu);
             m_DeleteButton.onClick.RemoveListener(DeleteFocusedObject);
             m_PlaneManager.trackablesChanged.RemoveListener(OnPlaneChanged);
+           
         }
 
         /// <summary>
@@ -265,6 +269,8 @@ namespace UnityEngine.XR.Templates.AR
 
             m_DebugMenuSlider.value = m_ShowDebugMenu ? 1 : 0;
             m_DebugPlaneSlider.value = m_VisualizePlanes ? 1 : 0;
+
+           
         }
 
         /// <summary>
@@ -311,6 +317,8 @@ namespace UnityEngine.XR.Templates.AR
             {
                 m_IsPointerOverUI = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject(-1);
             }
+
+            
         }
 
         /// <summary>
@@ -326,18 +334,23 @@ namespace UnityEngine.XR.Templates.AR
             }
             else
             {
+              
+
                 if (m_ObjectSpawner.objectPrefabs.Count > objectIndex)
                 {
-                    m_ObjectSpawner.spawnOptionIndex = objectIndex;
+                    m_ObjectSpawner.spawnOptionIndex = objectIndex; 
+                   
                 }
                 else
                 {
                     Debug.LogWarning("Object Spawner not configured correctly: object index larger than number of Object Prefabs.");
                 }
             }
-
+           
             HideMenu();
         }
+
+        
 
         void ShowMenu()
         {

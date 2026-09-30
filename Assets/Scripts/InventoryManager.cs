@@ -3,12 +3,9 @@ using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
-    [SerializeField] GameObject Inventory;
-    [SerializeField] Button openInventoryButton;
-
     void Start()
     {
-        openInventoryButton.onClick.AddListener(Show);
+       
     }
 
    
@@ -17,12 +14,5 @@ public class InventoryManager : MonoBehaviour
         
     }
 
-     void Show() 
-    {
-        Inventory.SetActive(true); 
-    }
-    public void Hide() 
-    { 
-        Inventory.SetActive(false); 
-    }
+    
 }
