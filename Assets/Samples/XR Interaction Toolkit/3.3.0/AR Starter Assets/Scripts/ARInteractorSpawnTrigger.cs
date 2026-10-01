@@ -8,6 +8,8 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 namespace UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets
 {
+
+   
     /// <summary>
     /// Spawns an object at an <see cref="IARInteractor"/>'s raycast hit position when a trigger is activated.
     /// </summary>
@@ -29,6 +31,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.ARStarterAssets
             /// </summary>
             InputAction,
         }
+       
 
         [SerializeField]
         [Tooltip("The AR ray interactor that determines where to spawn the object.")]
