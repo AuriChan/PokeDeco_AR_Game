@@ -10,7 +10,10 @@ public class ARInteractionToggle : MonoBehaviour
     [SerializeField] private ARPlaneManager planeManager;
     //[SerializeField] private MonoBehaviour rayInteractorComponent;
     [SerializeField] private ObjectSpawner objectSpawner;
+    [SerializeField] private GameObject Spawner;
     [SerializeField] private GameObject decorationMode;
+
+    private GameObject selectedObject;
 
     // This function will be called by Inventory and Photo Mode UI buttons (just Phono Mode for the moment)
     public void SetARInteractionsActive(bool isActive)
@@ -45,21 +48,39 @@ public class ARInteractionToggle : MonoBehaviour
     public void SetBlockTransforms(bool isActive)
     {
 
-        if (objectSpawner != null)
-        { 
-            objectSpawner.GetSpawnedObjects();
-            for (int i = 0; i < objectSpawner.GetSpawnedObjects().Count; i++)
-            {
-                objectSpawner.GetSpawnedObjects()[i].GetComponent<XRGrabInteractable>().trackPosition = isActive;
-                objectSpawner.GetSpawnedObjects()[i].GetComponent<XRGrabInteractable>().trackScale = isActive;
-                objectSpawner.GetSpawnedObjects()[i].GetComponent<XRGrabInteractable>().trackRotation = isActive;
-            }
+        //if (objectSpawner != null)
+        //{ 
+        //    objectSpawner.GetSpawnedObjects();
+        //    for (int i = 0; i < objectSpawner.GetSpawnedObjects().Count; i++)
+        //    {
+        //        objectSpawner.GetSpawnedObjects()[i].GetComponent<XRGrabInteractable>().trackPosition = isActive;
+        //        objectSpawner.GetSpawnedObjects()[i].GetComponent<XRGrabInteractable>().trackScale = isActive;
+        //        objectSpawner.GetSpawnedObjects()[i].GetComponent<XRGrabInteractable>().trackRotation = isActive;
+        //    }
+        //}
+
+    }
+    public void DeleteSelectedObject()
+    {
+        if (selectedObject == null)
+        {
+            return;
         }
 
+        objectSpawner.GetSpawnedObjects().Remove(selectedObject);
+        Destroy(selectedObject);
+        selectedObject = null;
     }
     void Update()
     {
-
+        if (Spawner.transform.childCount > 0)
+        {
+            selectedObject = Spawner.transform.GetChild(Spawner.transform.childCount - 1).gameObject;
+        }
+        else
+        {
+            selectedObject = null;
+        }
         if ((decorationMode != null) && decorationMode.activeSelf == true)
         {
             for (int i = 0; i < objectSpawner.GetSpawnedObjects().Count; i++)

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Utilities;
 
 namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
@@ -292,9 +293,9 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 visualizationTrans.rotation = newObject.transform.rotation;
             }
 
-            
-            objectSpawned?.Invoke(newObject);
             spawnedObjects.Add(newObject);
+            objectSpawned?.Invoke(newObject);
+            
 
             return true;
         }
@@ -325,5 +326,13 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             AudioManager.PlayOneShot(spawnSound[Random.Range(0, spawnSound.Count)]);
 
         }
+        //public void DeleteSelectedObject()
+        //{
+        //    if (selectedObject == null) return;
+
+        //    spawnedObjects.Remove(selectedObject);
+        //    Destroy(selectedObject);
+        //    selectedObject = null;
+        //}
     }
 }
