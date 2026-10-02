@@ -71,6 +71,20 @@ public class ARInteractionToggle : MonoBehaviour
         Destroy(selectedObject);
         selectedObject = null;
     }
+    public void DeleteAllObject()
+    {
+        while (objectSpawner.GetSpawnedObjects().Count > 0)
+        {
+            GameObject obj = objectSpawner.GetSpawnedObjects()[0];
+            objectSpawner.GetSpawnedObjects().RemoveAt(0);
+            if (obj != null)
+            {
+                Destroy(obj);
+            }
+        }
+
+            selectedObject = null;
+    }
     void Update()
     {
         if (Spawner.transform.childCount > 0)

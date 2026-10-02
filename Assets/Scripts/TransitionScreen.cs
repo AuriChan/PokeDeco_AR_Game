@@ -3,24 +3,38 @@ using UnityEngine;
 
 public class TransitionScreen : MonoBehaviour
 {
-    [SerializeField] private GameObject decorationMode;
     [SerializeField] private AudioManager audioManager;
     [SerializeField] private float waitTime = 4;     
     [SerializeField] private float transitionTime = 1; 
-    [SerializeField] private float distance = 1920; 
+    [SerializeField] private float distance = 1920;
+    [SerializeField] private AudioClip PhotoMusic;
 
-    void Start()
+    private RectTransform rect;
+    private Vector2 onScreenPos;
+    void Awake()
     {
-        StartCoroutine(TransitionRoutine());
+        rect = (RectTransform)transform;
+        onScreenPos = rect.anchoredPosition;
     }
-
-    private IEnumerator TransitionRoutine()
+    public void StartTransition(GameObject mode)
     {
-      
+        StartCoroutine(TransitionRoutine(mode));
+    }
+    public IEnumerator TransitionRoutine(GameObject mode)
+    {
+
+        rect.anchoredPosition = onScreenPos;
         yield return new WaitForSeconds(waitTime);
 
-        audioManager.PlayMusicRand();
-        decorationMode.SetActive(true);
+        mode.SetActive(true);
+        if(mode.name == "Decoration_Mode")
+        {
+            audioManager.PlayMusicRand();
+        }
+        else if (mode.name == "Photo_Mode")
+        {
+            audioManager.PlayMusic(PhotoMusic);
+        }
 
         RectTransform rt = (RectTransform)transform;
         Vector2 startPos = rt.anchoredPosition;
