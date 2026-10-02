@@ -1484,7 +1484,7 @@ MonoBehaviour:
         m_MethodName: PlaySFX
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: baac6b372050f7842bc1c2b09e7082cc, type: 3}
+          m_ObjectArgument: {fileID: 8300000, guid: 5da965eed46fd6047b928733d5ba2de2, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -4370,8 +4370,8 @@ MonoBehaviour:
   m_ObjectPrefabs:
   - {fileID: 7768663850006364841, guid: 95dfd13852b09db46ba8d770cf96d836, type: 3}
   - {fileID: 4636818841925912320, guid: 48056be3ac668c84ab3589a0acd51002, type: 3}
-  - {fileID: 7254566802943549340, guid: bd3666cd267761745a5bc2f727ff673e, type: 3}
-  - {fileID: 3457446095503932169, guid: 1c9611ff43298a643a1f756141ab96e2, type: 3}
+  - {fileID: 2534965417210729843, guid: bd3666cd267761745a5bc2f727ff673e, type: 3}
+  - {fileID: 6211322914983743169, guid: 1c9611ff43298a643a1f756141ab96e2, type: 3}
   - {fileID: 1806238039042196831, guid: c7552ba0d8edf8546ae6bfa3c0c35332, type: 3}
   - {fileID: 4609620241510826166, guid: eefb52295a80cd74aa336d3deafb4c3b, type: 3}
   - {fileID: 5593941943057452710, guid: 163fa2850a529bf4b930ed6b0993f346, type: 3}
