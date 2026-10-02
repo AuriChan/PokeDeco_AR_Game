@@ -3000,6 +3000,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1477616170}
+        m_TargetAssemblyTypeName: ARInteractionToggle, Assembly-CSharp
+        m_MethodName: SetBlockTransforms
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1210463557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4058,6 +4070,7 @@ MonoBehaviour:
   - {fileID: 2304496414610264927, guid: 91aeff5d5792462499af9dead05ec406, type: 3}
   - {fileID: 3392679629966885647, guid: 87236d16a0c314143a198c58c025b27b, type: 3}
   - {fileID: 4609620241510826166, guid: eefb52295a80cd74aa336d3deafb4c3b, type: 3}
+  decorationMode: {fileID: 1004284625}
   m_SpawnVisualizationPrefab: {fileID: 0}
   m_SpawnOptionIndex: 0
   m_OnlySpawnInView: 1
@@ -4111,6 +4124,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ARInteractionToggle
   screenSpaceRayInteractor: {fileID: 1389492076}
   planeManager: {fileID: 1411099621}
+  objectSpawner: {fileID: 1456198883}
+  decorationMode: {fileID: 1004284625}
 --- !u!1 &1481063241
 GameObject:
   m_ObjectHideFlags: 0
@@ -5498,6 +5513,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1477616170}
+        m_TargetAssemblyTypeName: ARInteractionToggle, Assembly-CSharp
+        m_MethodName: SetBlockTransforms
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1756256488
 MonoBehaviour:

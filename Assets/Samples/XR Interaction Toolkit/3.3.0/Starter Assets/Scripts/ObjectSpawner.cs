@@ -10,6 +10,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
     /// </summary>
     public class ObjectSpawner : MonoBehaviour
     {
+
         [SerializeField] private AudioSource AudioManager;
         [SerializeField] private List<AudioClip> spawnSound;
         [SerializeField]
@@ -31,6 +32,14 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         [SerializeField]
         [Tooltip("The list of prefabs available to spawn.")]
         List<GameObject> m_ObjectPrefabs = new List<GameObject>();
+        //list for objects spawned during runtime
+        private  List<GameObject> spawnedObjects = new List<GameObject>();
+        [SerializeField] private GameObject decorationMode;
+
+        public List<GameObject> GetSpawnedObjects()
+        {
+            return spawnedObjects;
+        }
 
         /// <summary>
         /// The list of prefabs available to spawn.
@@ -224,6 +233,10 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
         /// <seealso cref="objectSpawned"/>
         public bool TrySpawnObject(Vector3 spawnPoint, Vector3 spawnNormal)
         {
+            if(decorationMode.active == true)
+            {
+                return false;
+            }
             if (m_OnlySpawnInView)
             {
                 var inViewMin = m_ViewportPeriphery;
@@ -281,6 +294,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
 
             
             objectSpawned?.Invoke(newObject);
+            spawnedObjects.Add(newObject);
 
             return true;
         }
