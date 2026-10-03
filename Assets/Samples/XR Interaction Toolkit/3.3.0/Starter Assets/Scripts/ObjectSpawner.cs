@@ -294,6 +294,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
             }
 
             spawnedObjects.Add(newObject);
+            AudioManager.PlayOneShot(spawnSound[Random.Range(0, spawnSound.Count)]);
             objectSpawned?.Invoke(newObject);
             
 
@@ -322,17 +323,8 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets
                 m_SpawnTrigger.enabled = false;
             }
 
-            //put object on plane spawn sound
-            AudioManager.PlayOneShot(spawnSound[Random.Range(0, spawnSound.Count)]);
 
         }
-        //public void DeleteSelectedObject()
-        //{
-        //    if (selectedObject == null) return;
-
-        //    spawnedObjects.Remove(selectedObject);
-        //    Destroy(selectedObject);
-        //    selectedObject = null;
-        //}
+        
     }
 }

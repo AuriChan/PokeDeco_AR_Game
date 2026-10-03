@@ -8,7 +8,6 @@ public class ARInteractionToggle : MonoBehaviour
     [Header("AR elements to disable")]
     [SerializeField] private GameObject screenSpaceRayInteractor;
     [SerializeField] private ARPlaneManager planeManager;
-    //[SerializeField] private MonoBehaviour rayInteractorComponent;
     [SerializeField] private ObjectSpawner objectSpawner;
     [SerializeField] private GameObject Spawner;
     [SerializeField] private GameObject decorationMode;
@@ -39,25 +38,6 @@ public class ARInteractionToggle : MonoBehaviour
         {
             objectSpawner.enabled = isActive;
         }
-
-        //if (rayInteractorComponent != null)
-        //{
-        //    rayInteractorComponent.enabled = isActive;
-        //}
-    }
-    public void SetBlockTransforms(bool isActive)
-    {
-
-        //if (objectSpawner != null)
-        //{ 
-        //    objectSpawner.GetSpawnedObjects();
-        //    for (int i = 0; i < objectSpawner.GetSpawnedObjects().Count; i++)
-        //    {
-        //        objectSpawner.GetSpawnedObjects()[i].GetComponent<XRGrabInteractable>().trackPosition = isActive;
-        //        objectSpawner.GetSpawnedObjects()[i].GetComponent<XRGrabInteractable>().trackScale = isActive;
-        //        objectSpawner.GetSpawnedObjects()[i].GetComponent<XRGrabInteractable>().trackRotation = isActive;
-        //    }
-        //}
 
     }
     public void DeleteSelectedObject()
