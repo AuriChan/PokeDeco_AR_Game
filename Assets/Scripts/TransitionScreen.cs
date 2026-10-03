@@ -27,7 +27,7 @@ public class TransitionScreen : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         mode.SetActive(true);
-        if(mode.name == "Decoration_Mode")
+        if (mode.name == "Decoration_Mode")
         {
             audioManager.PlayMusicRand();
         }
@@ -36,20 +36,36 @@ public class TransitionScreen : MonoBehaviour
             audioManager.PlayMusic(PhotoMusic);
         }
 
-        RectTransform rt = (RectTransform)transform;
-        Vector2 startPos = rt.anchoredPosition;
-        Vector2 endPos = startPos - Vector2.down * distance;
+        //RectTransform rt = (RectTransform)transform;
+        //Vector2 startPos = rt.anchoredPosition;
+        //Vector2 endPos = startPos - Vector2.down * distance;
+
+        //float elapsed = 0;
+        //while (elapsed < transitionTime)
+        //{
+        //    elapsed += Time.deltaTime;
+        //    rt.anchoredPosition = Vector2.Lerp(startPos, endPos, elapsed / transitionTime);
+        //    yield return null;   
+        //}
+
+        //rt.anchoredPosition = endPos;
+
+        RectTransform canvasRect = rect.root.GetComponent<RectTransform>();
+        float distance = canvasRect.rect.height + rect.rect.height;
+
+        Vector2 startPos = rect.anchoredPosition;
+        Vector2 endPos = startPos + Vector2.up * distance;
 
         float elapsed = 0;
         while (elapsed < transitionTime)
         {
             elapsed += Time.deltaTime;
-            rt.anchoredPosition = Vector2.Lerp(startPos, endPos, elapsed / transitionTime);
-            yield return null;   
+            float t = elapsed / transitionTime;
+            rect.anchoredPosition = Vector2.Lerp(startPos, endPos, t);
+            yield return null;
         }
+        rect.anchoredPosition = endPos;
 
-        rt.anchoredPosition = endPos;
-        
-        
+
     }
 }
