@@ -283,7 +283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TransitionScreen
   audioManager: {fileID: 1600728479}
-  waitTime: 3
+  waitTime: 1
   transitionTime: 1
   PhotoMusic: {fileID: 8300000, guid: 57304d7ecc0c9474c938b84109b34525, type: 3}
 --- !u!1 &70782918
@@ -4084,7 +4084,7 @@ MonoBehaviour:
   - {fileID: 7076696113215807063, guid: e7338299b694f2e4ba33463d9087093d, type: 3}
   - {fileID: 5382501426249594221, guid: 1086d8f9989b5aa42aa610f8961f4700, type: 3}
   spawnRotationOffset: {x: 0, y: 0, z: 0}
-  spawnPositionOffset: {x: 0, y: 0, z: 0}
+  spawnPositionOffset: {x: 0, y: 0.2, z: 0}
 --- !u!1 &1419763225
 GameObject:
   m_ObjectHideFlags: 0
