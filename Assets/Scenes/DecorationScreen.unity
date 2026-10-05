@@ -285,7 +285,6 @@ MonoBehaviour:
   audioManager: {fileID: 1600728479}
   waitTime: 3
   transitionTime: 1
-  distance: 1920
   PhotoMusic: {fileID: 8300000, guid: 57304d7ecc0c9474c938b84109b34525, type: 3}
 --- !u!1 &70782918
 GameObject:
@@ -701,6 +700,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114540562}
   m_CullTransparentMesh: 1
+--- !u!1 &122171296 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 1055134886}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &130546711
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,7 +896,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1477616170}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ARInteractionToggle, Assembly-CSharp
         m_MethodName: SetARInteractionsActive
         m_Mode: 6
@@ -1515,7 +1519,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1477616170}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ARInteractionToggle, Assembly-CSharp
         m_MethodName: DeleteSelectedObject
         m_Mode: 1
@@ -2577,7 +2581,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2512387470319625105, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
   m_PrefabInstance: {fileID: 1055134886}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1389492076}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
@@ -3102,6 +3106,12 @@ PrefabInstance:
       insertIndex: 0
       addedObject: {fileID: 1456198881}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1411099626}
+    - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1411099627}
     - targetCorrespondingSourceObject: {fileID: 2512387469002778309, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 629924607}
@@ -3414,7 +3424,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1477616170}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ARInteractionToggle, Assembly-CSharp
         m_MethodName: SetBlockTransforms
         m_Mode: 6
@@ -4039,22 +4049,42 @@ RectTransform:
   m_AnchoredPosition: {x: 6.6604, y: -0.14584}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1389492076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2512387470319625119, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-  m_PrefabInstance: {fileID: 1055134886}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1411099621 stripped
+--- !u!114 &1411099626
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2512387470528047737, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-  m_PrefabInstance: {fileID: 1055134886}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 122171296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
+  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARTrackedImageManager
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SerializedLibrary: {fileID: 11400000, guid: 76b1566d2398ab64e9273cc8453b2b22, type: 2}
+  m_MaxNumberOfMovingImages: 0
+  m_TrackedImagePrefab: {fileID: 0}
+--- !u!114 &1411099627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122171296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd43c6278a5d17f42a4ebb8dc4a51d22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PokemonSpawner
+  ArPrefabs:
+  - {fileID: 143000306176705976, guid: ff02cfb5fad46e74198689b1ac637e7b, type: 3}
+  - {fileID: 7076696113215807063, guid: e7338299b694f2e4ba33463d9087093d, type: 3}
+  - {fileID: 5382501426249594221, guid: 1086d8f9989b5aa42aa610f8961f4700, type: 3}
+  spawnRotationOffset: {x: 0, y: 0, z: 0}
+  spawnPositionOffset: {x: 0, y: 0, z: 0}
 --- !u!1 &1419763225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4504,55 +4534,6 @@ MonoBehaviour:
   m_ApplyRandomAngleAtSpawn: 1
   m_SpawnAngleRange: 45
   m_SpawnAsChildren: 1
---- !u!1 &1477616168
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1477616169}
-  - component: {fileID: 1477616170}
-  m_Layer: 0
-  m_Name: ARInteractionManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1477616169
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477616168}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 63.5, y: 541.5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1477616170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477616168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0586680838b92f64aa2d563c5b66b365, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ARInteractionToggle
-  screenSpaceRayInteractor: {fileID: 1389492076}
-  planeManager: {fileID: 1411099621}
-  objectSpawner: {fileID: 1456198883}
-  Spawner: {fileID: 1456198880}
-  decorationMode: {fileID: 1004284625}
 --- !u!1 &1481063241
 GameObject:
   m_ObjectHideFlags: 0
@@ -5941,7 +5922,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1477616170}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ARInteractionToggle, Assembly-CSharp
         m_MethodName: SetBlockTransforms
         m_Mode: 6
@@ -7181,7 +7162,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1477616170}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ARInteractionToggle, Assembly-CSharp
         m_MethodName: SetARInteractionsActive
         m_Mode: 6
@@ -7642,7 +7623,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1477616170}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ARInteractionToggle, Assembly-CSharp
         m_MethodName: DeleteAllObject
         m_Mode: 1
@@ -8009,4 +7990,3 @@ SceneRoots:
   - {fileID: 1998510995}
   - {fileID: 1600728478}
   - {fileID: 1882903840}
-  - {fileID: 1477616169}

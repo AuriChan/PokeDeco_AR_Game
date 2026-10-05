@@ -23,7 +23,7 @@ MonoBehaviour:
     m_SerializedTextureGuid:
       m_GuidLow: 2671795360590694741
       m_GuidHigh: 18015834026635552920
-    m_Size: {x: 0, y: 0}
+    m_Size: {x: 0.35869566, y: 0.5}
     m_SpecifySize: 0
     m_Name: Treecko_Card
     m_Texture: {fileID: 0}
