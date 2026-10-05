@@ -82,7 +82,7 @@ public class ImageTracker : MonoBehaviour
                         spawnPositionOffset = new Vector3(0,0.2f,0);
                         break;
                     case "Torchic_Card":
-                        spawnPositionOffset = new Vector3(0, 0.3f, 0);
+                        spawnPositionOffset = new Vector3(0, 0.15f, 0);
                         break;
                     case "Treecko_Card":
                         spawnPositionOffset = new Vector3(0,0,0);
