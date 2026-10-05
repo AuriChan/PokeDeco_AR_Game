@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 4589780169708670434}
   - component: {fileID: 4995485216920258753}
   m_Layer: 0
-  m_Name: Mudkip
+  m_Name: Mudkip_Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,8 +117,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 712.20575, y: 2.5160995, z: 116.88115}
-  m_LocalScale: {x: 1031.5471, y: 1031.5471, z: 1031.5471}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5211771804636143196}
   - {fileID: 716131275503870109}

@@ -1237,7 +1237,7 @@ GameObject:
   - component: {fileID: 9141904495956366575}
   - component: {fileID: 6704037596975339773}
   m_Layer: 0
-  m_Name: Treecko.fbx
+  m_Name: Treecko_Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1253,8 +1253,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 686.86554, y: -0.000019708088, z: 119.381485}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7201803571607264578}
   - {fileID: 9194728334089061495}
