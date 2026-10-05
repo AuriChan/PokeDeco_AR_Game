@@ -8,9 +8,14 @@ public class PhotoCapture : MonoBehaviour
 
     [Header("Photo Taker")]
     [SerializeField] private Image photoDisplayArea;
+    [SerializeField] private GameObject photoCapture;
     [SerializeField] private GameObject photoFrame;
     [SerializeField] private GameObject photoModeUI;
     [SerializeField] private GameObject returnPhotoModeUI;
+
+    [Header("Photo Frames Randomizer")]
+    [SerializeField] private Sprite[] frameSprites;
+    private Image frameImageComponent;
 
     [Header("Flash Effect")]
     [SerializeField] private GameObject cameraFlash;
@@ -26,11 +31,16 @@ public class PhotoCapture : MonoBehaviour
     {
         screenCapture = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
         returnPhotoModeUI.SetActive(false);
+
+        if (photoFrame != null)
+        {
+            frameImageComponent = photoFrame.GetComponent<Image>();
+        }
     }
 
     public void TakePhoto()
     {
-        if(!viewingPhoto)
+        if (!viewingPhoto)
         {
             StartCoroutine(CapturePhoto());
         }
@@ -79,10 +89,16 @@ public class PhotoCapture : MonoBehaviour
 
     void ShowPhoto()
     {
+        if (frameSprites != null && frameSprites.Length > 0 && frameImageComponent != null)
+        {
+            int randomIndex = Random.Range(0, frameSprites.Length);
+            frameImageComponent.sprite = frameSprites[randomIndex];
+        }
+
         Sprite photoSprite = Sprite.Create(screenCapture, new Rect(0.0f, 0.0f, screenCapture.width, screenCapture.height), new Vector2(0.5f, 0.5f), 100.0f);
         photoDisplayArea.sprite = photoSprite;
 
-        photoFrame.SetActive(true);
+        photoCapture.SetActive(true);
         StartCoroutine(CameraFlashEffect());
         fadingAnimation.Play("Photo_Fade");
     }
@@ -90,7 +106,7 @@ public class PhotoCapture : MonoBehaviour
     public void RemovePhoto()
     {
         viewingPhoto = false;
-        photoFrame.SetActive(false);
+        photoCapture.SetActive(false);
 
         photoModeUI.SetActive(true);
     }
